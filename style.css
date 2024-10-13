@@ -1,0 +1,219 @@
+body {
+    background-color: #292524;
+    color: white;
+    padding: 48px 64px;
+    font-family: Sono;
+
+
+}
+
+
+.container {
+    /* max-width: 1500px; */
+    /* background-color: pink; */
+    margin: 0 auto;
+
+}
+
+img {
+    height: 68px;
+    width: 68px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+.logo {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    font-family: Coiny;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1;
+
+
+}
+
+.btn {
+    border-radius: 100px;
+    color: white;
+    font-family: Coiny;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px 16px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    background-image: linear-gradient(135deg,
+            #3b82f6, #ef4444, #16a34a, #eab308);
+}
+
+
+.btn:hover {
+    transform: scale(110%) rotate(-2deg);
+}
+
+.fact-form {
+    background-color: #44403c;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+
+}
+
+
+.fact-form input,
+.fact-form select {
+    border-radius: 100px;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    font-family: inherit;
+    background-color: #78716c;
+    color: inherit;
+
+
+
+}
+
+.fact-form span {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fact-form input::placeholder {
+    color: #a69f9b;
+
+}
+
+
+/* .fact-form input:first-child {
+    flex-grow: 1;
+} */
+
+.fact-form input:nth-child(1) {
+    flex-grow: 1;
+}
+
+
+@media(max-width:1068px) {
+    .fact-form {
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+.btn-all-categories {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.btn-tech {
+    background-color: #3b82f6;
+    margin-bottom: 14px;
+    background-image: none;
+    width: 100%;
+
+}
+
+.btn-science {
+    background-color: #16a34a;
+    background-image: none;
+    width: 100%;
+}
+
+
+/* .main {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+} */
+
+.main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 48px;
+
+}
+
+@media(max-width:900px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.fact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #44403c;
+    padding: 16px 24px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -1;
+}
+
+@media(max-width:1068px) {
+    .fact {
+        flex-direction: column;
+        align-items: end;
+        gap: 12px;
+    }
+}
+
+
+.tag {
+    border-radius: 16px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-family: Coiny;
+    font-size: 14px;
+
+
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+
+}
+
+.vote-buttons button {
+    border-radius: 100px;
+    background-color: #78716c;
+    color: inherit;
+    border: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+
+}
